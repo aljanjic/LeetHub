@@ -4,11 +4,7 @@
  */
 
 var createCounter = function(n) {
-    let noCalls = 0
-    return function() {
-        noCalls += 1;
-        return n + noCalls - 1;
-    };
+    return () => n++;
 };
 
 
